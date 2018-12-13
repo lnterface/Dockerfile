@@ -2,7 +2,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && \
-    apt-get install -y pwgen wget python python-m2crypto python-pip mysql-devel openldap-devel git gcc&& \
+    apt-get install -y pwgen wget python python-m2crypto python-pip mysql slapd ldap-utils git gcc&& \
     apt-get clean all
 
 # create app web
